@@ -5,18 +5,21 @@ import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import './styles/App.css';
 
 const App = () => {
   return (
-    <div>
-      <Header />
+
+     <div style={{ scrollBehavior: 'smooth' }}>
+     <Header />
       <About />
       <Services />
       <Portfolio />
       <Contact />
       <Footer />
-    </div>
-  );
+   </div>
+ );
+  
 };
 
 export default App;

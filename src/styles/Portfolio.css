@@ -1,0 +1,25 @@
+#portfolio {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  #portfolio div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  #portfolio div img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #portfolio div img:hover {
+    transform: scale(1.05);
+  }
+  #portfolio div {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
