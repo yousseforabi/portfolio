@@ -22,4 +22,8 @@
   #portfolio div {
     animation: fadeIn 1s ease-in-out;
   }
+  .project1{
+    height: 300px;
+    width: 400px;
+  }
   
