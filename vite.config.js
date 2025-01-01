@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [react()],
   base: 'https://yousseforabi.github.io/portfolio/',   
   build: {
-    outDir: 'dist'  // Corrected - removed trailing comma
+    outDir: 'dist' 
   }
 })
