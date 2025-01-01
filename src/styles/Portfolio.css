@@ -1,29 +1,79 @@
 #portfolio {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+#portfolio h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+#portfolio div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+#portfolio div > div {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 400px;
+}
+
+#portfolio div > div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+#portfolio div img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 4px solid #ff7f50;
+  transition: transform 0.3s ease-in-out;
+}
+
+#portfolio div img:hover {
+  transform: scale(1.05);
+}
+
+.project1 {
+  border-bottom-color: #ff7f50;
+}
+
+.project2 {
+  border-bottom-color: #4facfe;
+}
+
+#portfolio h3 {
+  margin: 20px 0 10px;
+  font-size: 1.5rem;
+  color: #444;
+}
+
+#portfolio p {
+  padding: 0 20px 30px;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Animation for fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  #portfolio div {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  #portfolio div img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  #portfolio div img:hover {
-    transform: scale(1.05);
-  }
-  #portfolio div {
-    animation: fadeIn 1s ease-in-out;
-  }
-  .project1{
-    height: 300px;
-    width: 400px;
-  }
-  
+}
